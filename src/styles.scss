@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/theming'; //importando o que tá lá em theming para obter os temas do material io
+@include mat-core(); //mixin do próprio angular material
+
+$custom-app-primary: mat-palette($mat-yellow, A200);
+$custom-app-accent: mat-palette($mat-blue-gray, 900);
+$custom-app-warn: mat-palette($mat-red);
+
+$custom-theme: mat-light-theme(
+  $custom-app-primary, $custom-app-accent, $custom-app-warn);
+
+
+@include angular-material-theme($custom-theme); //passando tema criado e customisado
+
+html, body { height: 100%; }
+body {
+  margin: 10px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+

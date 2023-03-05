@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "name": "Royal",
+    "status": "Aberto",
+    "street": "Lessa",
+    "district": "Jd. Leal",
+    "number": 1578,
+    "city": "Dq. Caxias",
+    "state": "RJ",
+    "country": "BR",
+    "rating": "3 estrelas",
+    "description": "Wi-fi incluso",
+    "averageDaily": 120
+  }
+]

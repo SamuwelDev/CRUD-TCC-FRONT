@@ -1,0 +1,66 @@
+<h1 mat-dialog-title>Novo hotel</h1>
+<div mat-dialog-content>
+  <form class="example-form" [formGroup]="hotelForm">
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Nome hotel</mat-label>
+      <input matInput formControlName="name" name="name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Status hotel</mat-label>
+      <input matInput formControlName="status" name="status">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Rua</mat-label>
+      <input matInput formControlName="street" name="street">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Bairro</mat-label>
+      <input matInput formControlName="district" name="district">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Numero</mat-label>
+      <input matInput formControlName="number" name="number">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Cidade</mat-label>
+      <input matInput formControlName="city" name="city">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Estado</mat-label>
+      <input matInput formControlName="state" name="state">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>País</mat-label>
+      <input matInput formControlName="country" name="country">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Classificação</mat-label>
+      <input matInput formControlName="rating" name="rating">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Descrição</mat-label>
+      <input matInput formControlName="description" name="description">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Diária média</mat-label>
+      <input matInput formControlName="averageDaily" name="averageDaily">
+    </mat-form-field>
+
+
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="createHotel()">Adicionar</button>
+  <button mat-button (click)="cancel()">Cancelar</button>
+</div>
