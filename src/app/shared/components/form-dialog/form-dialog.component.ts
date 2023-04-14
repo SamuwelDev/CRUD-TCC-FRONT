@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { HotelsService } from 'src/app/hotels/services/hotels.service';
 
@@ -11,11 +11,11 @@ import { HotelsService } from 'src/app/hotels/services/hotels.service';
 })
 export class FormDialogComponent implements OnInit {
 
-  public hotelForm: FormGroup;
+  public hotelForm: UntypedFormGroup;
 
   constructor(
     public dialog: MatDialog,
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private rest: HotelsService,
     public dialogRef: MatDialogRef<FormDialogComponent>
 
