@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import '@angular/material/theming'; //importando o que tá lá em theming para obter os temas do material io
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @include mat-core(); //mixin do próprio angular material
 
-$custom-app-primary: mat-palette($mat-yellow, A200);
+$custom-app-primary: mat-palette($mat-blue-gray, A600);
 $custom-app-accent: mat-palette($mat-blue-gray, 900);
 $custom-app-warn: mat-palette($mat-red);
 
@@ -19,3 +20,9 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";

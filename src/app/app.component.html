@@ -1,4 +1,61 @@
-<mat-toolbar color="primary">
-  <span>Hotéis</span>
-</mat-toolbar>
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+</head>
+<body class="w3-light-grey">
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg " style="background-color: #0e4872;">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2"  class=" w3-button w3-text-white"><b><i class="fa fa-map-marker w3-margin-right"></i>SGH</b></a>
+
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-link px-3 me-2 w3-text-white">
+          Login
+        </button>
+        <button type="button" class="btn btn-light me-3 w3-text-black">
+          Cadastre-se
+        </button>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
 <router-outlet></router-outlet>
