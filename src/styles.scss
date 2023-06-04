@@ -20,6 +20,23 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+h1 {
+  position: relative;
+  /* outros estilos desejados para o título */
+}
+
+.image-wrapper {
+  position: static;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-wrapper img {
+  width: 200px;
+  height: 200px;
+  /* outros estilos desejados para a imagem */
+}
 
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
